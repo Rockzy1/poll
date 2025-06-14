@@ -1,0 +1,16 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    background: url("./images/john-towner-JgOeRuGD_Y4-unsplash.jpg") no-repeat;
+    background-size: cover;
+    color: white;
+}
+li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+li {
+    list-style: none;
+    
+}

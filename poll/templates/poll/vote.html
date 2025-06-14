@@ -1,0 +1,13 @@
+{% extends "poll/base.html" %}
+<!---->
+{% block content %} {% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'poll/style.css' %}" />
+<h1 class="mt-5">{{ question.question_text }}</h1>
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <div>
+    <button type="submit" class="btn btn-dark">Vote</button>
+    <a href="{% url 'home'%}" class="btn btn-dark">Home Page</a>
+  </div>
+</form>
+{% endblock%}
